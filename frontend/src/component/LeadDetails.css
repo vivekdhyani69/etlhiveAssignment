@@ -1,0 +1,48 @@
+.lead-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  padding: 20px;
+}
+
+.lead-details-table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px 0;
+  border: 1px solid #000; /* Black border for the table */
+  background-color: #fff; /* White background for the table */
+}
+
+.lead-details-table th, .lead-details-table td {
+  border: 1px solid #000; /* Black border for table cells */
+  padding: 8px;
+  text-align: left;
+}
+
+.lead-details-table th {
+  background-color: #f2f2f2; /* Light grey background for table headers */
+}
+
+.empty-table-message {
+  text-align: center;
+  color: #000; /* Black text for empty message */
+  font-style: italic;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
