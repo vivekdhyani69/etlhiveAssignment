@@ -18,7 +18,7 @@ const CreateLeadPage = () => {
 
     try {
     
-      await axios.post('https://etlhive-assignment-api.vercel.app/api/leads/createLeads', { email, name, number, product, userId : userData?._id }, {
+      await axios.post('https://sai-lovat.vercel.app/api/leads/createLeads', { email, name, number, product, userId : userData?._id }, {
         headers: {
           Authorization: `Bearer ${token}`
         }

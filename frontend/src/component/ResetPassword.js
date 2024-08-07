@@ -11,7 +11,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`https://etlhive-assignment-api.vercel.app/api/users/reset-password/${token}`, { password });
+      await axios.post(`https://sai-lovat.vercel.app/api/users/reset-password/${token}`, { password });
       setMessage('Password has been reset successfully');
     } catch (err) {
       setError(err.response.data.error);

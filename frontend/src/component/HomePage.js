@@ -14,7 +14,7 @@ const HomePage = () => {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem('token'); // Retrieve token from local storage
-      await axios.delete(`https://etlhive-assignment-api.vercel.app/api/leads/delete/${id}`, {
+      await axios.delete(`https://sai-lovat.vercel.app/api/leads/delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -32,7 +32,7 @@ const HomePage = () => {
       const token = localStorage.getItem('token');
       const userData = JSON.parse(localStorage.getItem('userData')); // Retrieve user data from local storage
 
-      const response = await axios.get(`https://etlhive-assignment-api.vercel.app/api/leads/getleads/${userData._id}`, {
+      const response = await axios.get(`https://sai-lovat.vercel.app/api/leads/getleads/${userData._id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -89,7 +89,7 @@ const HomePage = () => {
       const token = localStorage.getItem('token');
       const userData = JSON.parse(localStorage.getItem('userData')); // Retrieve user data from local storage
 
-      const response = await axios.get(`https://etlhive-assignment-api.vercel.app/api/leads/sort/${userData._id}?sortBy=${order}`);
+      const response = await axios.get(`https://sai-lovat.vercel.app/api/leads/sort/${userData._id}?sortBy=${order}`);
 
       setLeads(response.data.leads); // Update leads with sorted data
     } catch (err) {

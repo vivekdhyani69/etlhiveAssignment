@@ -27,7 +27,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://etlhive-assignment-api.vercel.app/api/users/login', formData);
+      const response = await axios.post('https://sai-lovat.vercel.app/api/users/login', formData);
 
       alert('Login successful!' );
 navigate(`/home`)

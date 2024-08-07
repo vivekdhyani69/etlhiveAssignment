@@ -9,7 +9,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://etlhive-assignment-api.vercel.app/api/users/forgot-password', { email });
+      await axios.post('https://sai-lovat.vercel.app/api/users/forgot-password', { email });
       setMessage('Reset email sent, please check your inbox');
     } catch (err) {
       setError(err.response.data.error);

@@ -26,7 +26,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://etlhive-assignment-api.vercel.app/api/users/signup', formData);
+      const response = await axios.post('https://sai-lovat.vercel.app/api/users/signup', formData);
       alert(response.data.message);
    // Navigate to the login route on successful signup
    navigate('/login');
