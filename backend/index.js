@@ -9,9 +9,10 @@ const userRoutes = require('./routes/userRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 const app = express();
 app.use(express.json());
+
 app.use(cors(
 {
-  origin : [""],
+  origin : ["https://etlhive-assignment.vercel.app/"],
   methods : ["POST", "PUT", "DELETE","GET","PATCH"],
   credentials : true
 }
