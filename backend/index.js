@@ -9,7 +9,14 @@ const userRoutes = require('./routes/userRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+{
+  origin : [""],
+  methods : ["POST", "PUT", "DELETE","GET","PATCH"],
+  credentials : true
+}
+
+));
 
 const PORT = process.env.PORT || 5000;
 

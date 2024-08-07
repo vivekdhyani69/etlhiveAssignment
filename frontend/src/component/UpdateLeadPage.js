@@ -17,7 +17,7 @@ const UpdateLeadPage = () => {
     const fetchLead = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get(`http://localhost:5000/api/leads/getSpecificLead/${id}`, {
+        const response = await axios.get(`https://etlhive-assignment-api.vercel.app/api/leads/getSpecificLead/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -43,7 +43,7 @@ const UpdateLeadPage = () => {
     const userData = JSON.parse(localStorage.getItem('userData')); // Retrieve token from local storage
 
     try {
-      await axios.put(`http://localhost:5000/api/leads/update/${id}`, { email, name, number, product }, {
+      await axios.put(`https://etlhive-assignment-api.vercel.app/api/leads/update/${id}`, { email, name, number, product }, {
         headers: {
           Authorization: `Bearer ${token}`
         }
