@@ -6,7 +6,7 @@ const crypto = require('crypto');
 const sendEmail = require('../utils/mailer');
 const register = async (req, res) => {
 
-  const { name, username, password ,email} = req.body;
+  const { name, username, password ,email} = req.body
 
   // Validate password
   if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{7,}$/.test(password)) {
